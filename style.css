@@ -1,0 +1,22 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.d-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.dado{
+ background-color: aquamarine;
+ width: 200px;
+ height: 200px;
+ margin: 40px;
+}
