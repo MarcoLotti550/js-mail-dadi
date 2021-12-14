@@ -2,15 +2,17 @@ const risultato = document.getElementById("risultato");//const dei risultati
 
 let dice = document.querySelectorAll("img");//tutti i tag img ora vengono visti come dice
 
-prompt
+let UserEmail = prompt("Digita la tu mail");
+alert("l'" + "email " + UserEmail + " è " + "corretta");
 
 function gioca() {
     let dice1 = Math.floor(Math.random(0)*6 + 1);
     let dice2 = Math.floor(Math.random(0)*6 + 1);
+    let playerWin = document.getElementById(playerPoints);
+    let cpuWin = document.getElementById(cpuPoints);
     
     if (dice1 > dice2){
         risultato.innerHTML = '<div class="risultati">' + "HAI " + "VINTO" +'</div>';
-        
     }else if (dice1 < dice2){
         risultato.innerHTML = '<div class="risultati">' + "HAI " + "PERSO" +'</div>';
 
@@ -62,9 +64,6 @@ function gioca() {
     };//cambio immagini del secondo dado
 
 };
-
-
-
 
 
 
