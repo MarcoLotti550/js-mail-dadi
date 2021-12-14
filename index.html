@@ -17,11 +17,17 @@
                 <span id="perso">1</span>
             </div>
             <div class="d-flex-row">
-                <img src="img/dice-1.svg" id="dado1" alt="">
-                <img src="img/dice-2.svg" id="dado2" alt="">
+                <div>
+                    <p>Player</p>
+                    <img src="img/dice-1.svg" id="dado1" alt=""> 
+                </div>
+                <div>
+                    <p>CPU</p>
+                    <img src="img/dice-2.svg" id="dado2" alt="">
+                </div>    
             </div>
             <div class="risultati" id="risultato"></div>
-            <button onclick="gioca()" id="gioca">Gioca</button>
+            <button onclick="gioca(); imgdice();" id="gioca">Gioca</button>
         </div>
     </main>
     <script src="script.js"></script>
