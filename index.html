@@ -11,13 +11,17 @@
     <main>
         <div class="d-flex">
             <h1>Gioco dei dadi</h1>
-            <p id="punteggio">0 - 0</p>
-            <div class="d-flex-row">
-                <div class="dado"></div>
-                <div class="dado"></div>
+            <div id="punteggio d-flex-row">
+                <span id="vinto">1</span>
+                 - 
+                <span id="perso">1</span>
             </div>
-            <p id="risultato">hai vinto</p>
-            <button id="gioca">Gioca</button>
+            <div class="d-flex-row">
+                <img src="img/dice-1.svg" id="dado1" alt="">
+                <img src="img/dice-2.svg" id="dado2" alt="">
+            </div>
+            <div class="risultati" id="risultato"></div>
+            <button onclick="gioca()" id="gioca">Gioca</button>
         </div>
     </main>
     <script src="script.js"></script>
