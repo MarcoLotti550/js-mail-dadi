@@ -2,9 +2,6 @@ const risultato = document.getElementById("risultato");//const dei risultati
 
 let dice = document.querySelectorAll("img");//tutti i tag img ora vengono visti come dice
 
-let UserEmail = prompt("Digita la tu mail");
-alert("l'" + "email " + UserEmail + " è " + "corretta");
-
 function gioca() {
     let dice1 = Math.floor(Math.random(0)*6 + 1);
     let dice2 = Math.floor(Math.random(0)*6 + 1);
