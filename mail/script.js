@@ -1,19 +1,26 @@
-let UserEmail = ['marco@gmail.com', 'luca@gmail.com' , 'mattia@gmail.com']
+const UserEmail = ['marco@gmail.com', 'luca@gmail.com' , 'mattia@gmail.com']
 let mailCorretta = false;
 
 let accedi = prompt("Digita la tu mail");
 
-for (let index = 0; index < UserEmail.length; index++) {
+for (let i = 0; i < UserEmail.length; i++){
     
-    if(accedi == UserEmail[index]){
+    if(accedi == UserEmail[i]){
         mailCorretta = true;
-        alert("l'" + "email " + accedi + " è " + "corretta");
-        console.log("benvenuto");
 
     }else{
-        alert("L'utente non è autorizzato");
-        console.log("utente non autorizzato, si prega di riprovare");
-        
-    }
+        mailCorretta = false;
+    };
+
+};
+
+if(mailCorretta = true){
+    alert("l'" + "email " + accedi + " è " + "corretta");
+    console.log("benvenuto");
+
+}else if (mailCorretta = false){
+    alert("L'utente non è autorizzato");
+    console.log("utente non autorizzato, si prega di riprovare");
     
-}
+};
+

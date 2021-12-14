@@ -20,45 +20,11 @@ function gioca() {
 
     console.log(dice1 , dice2);
 
-    if (dice1 == 1){
-        document.getElementById("dado1").src = "img/dice-1.svg";
-        
-    }else if (dice1 == 2){
-        document.getElementById("dado1").src = "img/dice-2.svg";
-        
-    }else if (dice1 == 3){
-        document.getElementById("dado1").src = "img/dice-3.svg";
-        
-    }else if (dice1 == 4){
-        document.getElementById("dado1").src = "img/dice-4.svg";
-        
-    }else if (dice1 == 5){
-        document.getElementById("dado1").src = "img/dice-5.svg";
-        
-    }else if (dice1 == 6){
-        document.getElementById("dado1").src = "img/dice-6.svg";
-        
-    };//cambio immagini del primo dado
+    document.getElementById("dado1").src = 'img/dice-'+dice1+'.svg';
+    //cambio immagini del primo dado
 
-    if (dice2 == 1){
-        document.getElementById("dado2").src = "img/dice-1.svg";
-        
-    }else if (dice2 == 2){
-        document.getElementById("dado2").src = "img/dice-2.svg";
-        
-    }else if (dice2 == 3){
-        document.getElementById("dado2").src = "img/dice-3.svg";
-        
-    }else if (dice2 == 4){
-        document.getElementById("dado2").src = "img/dice-4.svg";
-        
-    }else if (dice2 == 5){
-        document.getElementById("dado2").src = "img/dice-5.svg";
-        
-    }else if (dice2 == 6){
-        document.getElementById("dado2").src = "img/dice-6.svg";
-        
-    };//cambio immagini del secondo dado
+    document.getElementById("dado2").src = 'img/dice-'+dice2+'.svg';
+    //cambio immagini del secondo dado
 
 };
 
